@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Home — Temple Builders Guild</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Temple Builders Guild — California 501(c)(3). EIN 84-4649120. We steward and maintain tools and infrastructure for art and community use.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Temple Builders Guild logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero"><div class="container inner">
+    <span class="badge">Nonprofit Public Benefit • 501(c)(3) • EIN 84-4649120</span>
+    <h1><span class="upper-strong">TEMPLE BUILDERS GUILD</span></h1>
+    <p>We are a California 501(c)(3) nonprofit public benefit corporation. Our specific purpose is to <strong>steward and maintain tools and infrastructure for art and community use</strong>, enabling creativity, repair, and shared learning.</p>
+    <p><a class="btn btn-primary" href="about.html">Learn more</a> <a class="btn" href="programs.html">See programs</a></p>
+  </div></section>
+
+  <section class="section container split">
+    <div>
+      <h2>What We Do</h2>
+      <p>Tools, training, and shared spaces that empower makers and neighbors.</p>
+      <ul>
+        <li>Community tool‑library &amp; equipment stewardship</li>
+        <li>Workshops: safety, repair, woodworking, metal, arts</li>
+        <li>Collaborative builds and neighborhood projects</li>
+      </ul>
+    </div>
+    <figure class="figure"><img src="images/hero.jpg" alt="Community shop and shared tools"></figure>
+  </section>
+
+  <section class="section container grid-3">
+    <article class="card"><img src="images/education.jpg" alt="Workshops & Training"><div class="card-body">
+      <h3>Workshops &amp; Training</h3><p>Hands‑on classes for all skill levels with a focus on safety and inclusion.</p></div></article>
+    <article class="card"><img src="images/relief.jpg" alt="Tool Library"><div class="card-body">
+      <h3>Tool Library</h3><p>Access to maintained tools and shared infrastructure for art &amp; community projects.</p></div></article>
+    <article class="card"><img src="images/community.jpg" alt="Community Projects"><div class="card-body">
+      <h3>Community Projects</h3><p>Collaborations with local partners to repair, build, and beautify shared spaces.</p></div></article>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Temple Builders Guild</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 84-4649120</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>We exist to steward and maintain tools and infrastructure for art and community use.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>550 Blackberry Lane<br>San Rafael, CA 94903<br>
+        <strong>Email:</strong> <a href="mailto:contact@templebuildersguild.click">contact@templebuildersguild.click</a><br>
+        <strong>Phone:</strong> <a href="tel:+14195446563">+1 419 544 6563</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

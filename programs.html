@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Programs — Temple Builders Guild</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link rel="icon" href="images/logo.png">
+  <meta name="description" content="Temple Builders Guild programs — workshops & training, tool library, community projects.">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Home"><img src="images/logo.png" alt="Temple Builders Guild logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="governance.html">Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="section container">
+  <h1>Programs</h1>
+  <div class="grid-3">
+    <article class="card">
+      <img src="images/education.jpg" alt="Workshops & Training">
+      <div class="card-body">
+        <h3>Workshops &amp; Training</h3>
+        <p>Intro to tools, safety, repair, and creative builds for beginners to advanced makers.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/relief.jpg" alt="Tool Library">
+      <div class="card-body">
+        <h3>Tool Library</h3>
+        <p>Borrow maintained tools and use shared work areas to complete community projects.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/community.jpg" alt="Community Projects">
+      <div class="card-body">
+        <h3>Community Projects</h3>
+        <p>Volunteer builds and repairs with local groups, schools, and neighborhood partners.</p>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:160px;height:auto;margin-bottom:.5rem;">
+      <div class="small">© <span id="year"></span> Temple Builders Guild</div>
+      <div class="small">California Nonprofit Public Benefit • 501(c)(3) • EIN 84-4649120</div>
+    </div>
+    <div>
+      <div class="small"><strong>Mission:</strong><br>We exist to steward and maintain tools and infrastructure for art and community use.</div>
+    </div>
+    <div>
+      <div class="small">
+        <strong>Address:</strong><br>550 Blackberry Lane<br>San Rafael, CA 94903<br>
+        <strong>Email:</strong> <a href="mailto:contact@templebuildersguild.click">contact@templebuildersguild.click</a><br>
+        <strong>Phone:</strong> <a href="tel:+14195446563">+1 419 544 6563</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const b=document.querySelector('.menu-toggle'), l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=getComputedStyle(l).display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
